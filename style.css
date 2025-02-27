@@ -41,10 +41,21 @@ body {
     position: fixed;
     z-index: 110;
     color: var(--seasalt);
+    font-family: var(--font-in-decoration);
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
     column-gap: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--seasalt);
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
 }
