@@ -1,2 +1,2 @@
-# SITO_WEB
-La repo contiene lo sviluppo web
+#SITO WEB
+<i>La repo contiene il sito web</i>
