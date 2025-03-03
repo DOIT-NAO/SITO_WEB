@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <!--ICONS (REMIXICON), CDN JS li id="info"BRARY-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/li id="info"bs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpoli id="info"cy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--RIFERIMENTO CSS-->
-    <link rel="stylesheet" href="style.css">
+    <!--====REMIX ICON-API====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOIT-NAO</title>
-</head>
-<body>
-    <header id="header">
-        
-        <nav id="navbar" class="navbar">
-            <div id="logo">
-                DOIT-NAO
-            </div>
+    <!--====STYLESHEET CSS====-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>TPS 2024/2025</title>
+  </head>
+  <body>
+    <!--==== HEADER =====-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">LOGO</a>
 
-            <div id="sezione_menu">
-                <ul class="lista">
-                    <li id="info"><a href="#" target="_blank">Home</a></li>
-                    <li id="info"><a href="#" target="_blank">About us</a></li>
-                    <li id="info"><a href="#" target="_blank">Project</a></li>
-                    <li id="info"><a href="#" target="_blank">Merch</a></li>
-                </ul>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link" target="_blank">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
 
-            <div id="sezione_social">
-                <ul>
-                    <li><a href="#" target="_blank"></a></li>
-                    <li><a href="#" target="_blank"></a></li>
-                    <li><a href="#" target="_blank"></a></li>
-                </ul>
-            </div>
-        </nav>
+            <li class="nav__item">
+              <a href="#" class="nav__link" target="_blank">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>About us</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link" target="_blank">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Progetto</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link" target="_blank">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Ricerca</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link" target="_blank">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Merch</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <div class="nav__social">
+            <a
+              href="https://github.com/DOIT-NAO/DOIT-NAO"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/do.itnao?igsh=ZDk2Mzc3NHhsNThr"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@do.itnao?_t=ZN-8uIpCvOtyvm&_r=1"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-tiktok-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!--Toggle Button-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
     </header>
-    
-</body>
+
+    <!--Script navbar-->
+    <script src="assets/js/navbar.js"></script>
+
+    <!--PRIMO BOX CENTRALE-->
+    <div class="box_superiore">
+      <div id="testi">
+        <h2>DO IT NAO</h2>
+        <p>
+          Uniamo l'informatica e la robotica sino all'assistenza nello sport
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
