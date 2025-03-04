@@ -306,30 +306,36 @@ a {
 
 /*div superiore*/
 .box_superiore {
-  margin-top: 3.5rem;
   width: 100%;
-  height: 62rem;
+  min-height:100vh;
   background-image: url(../../images//planet2.jpeg);
-  background-size: cover;
-  background-position: center;
+  background-size: 135rem;
+  background-position: 0rem -40rem;
   background-repeat: no-repeat;
   color: var(--antiflash-white);
-  font-family: var(--font-estetico);
+  font-family: var(--text-main-font);
   display: flex;
   flex-direction: column;
   column-gap: 2rem;
-}
-.box_superiore #testi {
-  margin-left: 5%;
+  overflow: hidden;
 }
 
 #testi h2 {
   font-size: 80pt;
-  font-weight: normal;
-  margin-top: 4rem;
+  font-weight: 500;
+  margin-top: 8rem;
+  padding: 0.2rem;
+  border: 0;
+  position: relative;
+  left: 4rem;
 }
 
 #testi p {
-  width: 30rem;
+  width: 36rem;
   text-align: justify;
+  font-weight: 300;
+  padding: 0.8rem;
+  position:relative;
+  top: -1.5rem;
+  left: 4rem;
 }
