@@ -375,6 +375,7 @@ a {
   background-position:0rem -20rem ;
   flex-direction: row;
   row-gap: 2rem;
+  flex-wrap: wrap;
 }
 /*INFO CONTINERS*/
 .info_container {
@@ -411,4 +412,28 @@ a {
   border: none;
   font-family: var(--text-main-font);
   border: 0.5px solid rgb(122, 122, 122);
+  transition:cubic-bezier(0.755, 0.05, 0.855, 0.06) .1s; 
+}
+.info_container #btn:hover {
+  border: 1px solid rgb(0,0,0);
+}
+
+/*gestione queries*/
+@media screen and (max-width: 680px) {
+  #box_superiore #testi h2 {
+    font-size: 70px;
+  }
+  #box_superiore #testi p {
+    font-size: 15px;
+    width: 22rem;
+    padding: 0.1;
+  }
+
+  #box_secondo .info_container {
+    width: 13rem;
+    row-gap: 0;
+    margin-left: 0;
+    column-gap: 0;
+    height: 18rem;
+  }
 }
