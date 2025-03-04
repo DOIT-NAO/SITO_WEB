@@ -59,7 +59,6 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--antiflash-white);
 }
 
 ul {
@@ -305,19 +304,21 @@ a {
 }
 
 /*div superiore*/
-.box_superiore {
+.box {
   width: 100%;
   min-height:100vh;
-  background-image: url(../../images//planet2.jpeg);
-  background-size: 135rem;
-  background-position: 0rem -40rem;
-  background-repeat: no-repeat;
   color: var(--antiflash-white);
   font-family: var(--text-main-font);
   display: flex;
   flex-direction: column;
   column-gap: 2rem;
   overflow: hidden;
+}
+#box_superiore {
+  background-image: url(../../images//planet2.jpeg);
+  background-size: 135rem;
+  background-position: 0rem -40rem;
+  background-repeat: no-repeat;
 }
 
 #testi h2 {
@@ -338,4 +339,28 @@ a {
   position:relative;
   top: -1.5rem;
   left: 4rem;
+}
+/*bottone*/
+#spazio_bottoni {
+  position: relative;
+  width: 100%;
+  min-height: 5vh;
+  left: 4rem;
+  padding: 0.5rem;
+}
+#spazio_bottoni #btn{
+  padding: 0.8rem;
+  font-family: var(--text-main-font);
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(255,255,255);
+  box-shadow: 2px -2px 10px rgba(255, 255, 255, 0.3);
+  position: relative;
+  top: -1.5rem;
+  left: 0.1rem;
+}
+
+#btn:hover{
+  box-shadow: 2px -2px 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
