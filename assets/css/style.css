@@ -60,6 +60,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   cursor: default;
+  overflow-x: hidden; /*blocco scroll asse x*/
 }
 
 ul {
@@ -392,6 +393,7 @@ a {
   align-items: center;
   margin-left: 2rem;
 }
+
 .info_container #titolo {
   font-size: 18pt;
   font-weight: 600;
@@ -435,5 +437,142 @@ a {
     margin-left: 0;
     column-gap: 0;
     height: 18rem;
+  }
+}
+
+/* footer */
+footer {
+  margin-bottom: 0;
+  background-color: var(--eerie-black);
+  height: auto;
+  padding: 2rem;
+  color: var(--antiflash-white);
+  font-size: 15px;
+  font-family: var(--text-main-font);
+}
+
+footer .superiore {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Assicura che le colonne non vanno a capo */
+  gap: 2rem;
+}
+
+footer .superiore hr {
+  width: 100%;
+  border: 1px solid var(--antiflash-white); /* Linea di separazione più visibile */
+}
+
+footer .superiore span {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+#colonna1,
+#colonna2,
+#colonna3 {
+  width: 30%; /* Impostiamo una larghezza per ogni colonna */
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  margin-top: 0.5rem;
+}
+
+footer .inferiore {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+footer .inferiore #parte1,
+footer .inferiore #parte2 {
+  width: 48%;
+}
+
+footer .inferiore #parte1 {
+  text-align: left;
+}
+
+footer .inferiore #parte2 {
+  text-align: right;
+}
+
+/* Media queries per dispositivi più piccoli */
+@media screen and (max-width: 1400px) {
+  footer .superiore {
+    gap: 1rem; /* Aggiustiamo il gap per schermi più piccoli */
+  }
+
+  #colonna1,
+  #colonna2,
+  #colonna3 {
+    width: 30%;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  footer .superiore hr {
+    width: 100%; /* La linea di separazione si estende su tutta la larghezza */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer .superiore {
+    display: flex;
+    flex-wrap: nowrap; /* Rimane sulla stessa riga anche su schermi piccoli */
+    gap: 1rem;
+    justify-content: center; /* Allineamento centrato per schermi più piccoli */
+  }
+
+  #colonna1,
+  #colonna2,
+  #colonna3 {
+    width: 30%; /* Manteniamo la larghezza su 30% per ciascuna colonna */
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  footer .inferiore {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .inferiore #parte1,
+  footer .inferiore #parte2 {
+    width: 48%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  footer .superiore {
+    gap: 1rem;
+  }
+
+  #colonna1,
+  #colonna2,
+  #colonna3 {
+    width: 30%; /* Le colonne rimangono a 30% anche su schermi piccoli */
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+
+  footer .inferiore {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .inferiore #parte1,
+  footer .inferiore #parte2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
   }
 }
