@@ -1,0 +1,42 @@
+@import url(style.css);
+
+#box_superiore {
+    background-image: url(../../images/team.jpeg);
+    background-size: cover !important;
+    background-position: 0rem -5rem;
+}
+
+/*box secondario*/
+#box_secondario {
+    background-image: url(../../images/Flux_Dev_Render_a_highly_detailed_futuristic_interior_of_a_spa_0.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 40rem;
+}
+
+#box_secondario .box_team {
+    width: 20rem;
+    padding: 1rem;
+    background-color: var(--antiflash-white);
+    color: var(--onyx);
+    border-radius: 9px;
+    height: 13rem;
+    
+}
+
+.box_team #img {
+    width: 3rem;
+    border-radius: 900px;
+    height: 15%;
+
+    
+}
+.box_team #nomi{
+    color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30rem;
+    
+
+}
