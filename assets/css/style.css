@@ -371,7 +371,7 @@ a {
 #box_secondo {
   background-image: url(../../images/robot1.jpeg);
   background-repeat: no-repeat;
-  background-size: 85rem;
+  background-size: cover;
   background-position:0rem -20rem ;
   flex-direction: row;
   row-gap: 2rem;
@@ -430,7 +430,7 @@ a {
   }
 
   #box_secondo .info_container {
-    width: 13rem;
+    width: 20rem;
     row-gap: 0;
     margin-left: 0;
     column-gap: 0;
